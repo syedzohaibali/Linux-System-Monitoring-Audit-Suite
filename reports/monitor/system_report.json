@@ -54,5 +54,29 @@
         "disk_percent": 0.9,
         "net_bytes_sent": 1689000,
         "net_bytes_recv": 117447950
+    },
+    {
+        "timestamp": "2025-09-12 01:03:48",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.7,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 1689000,
+        "net_bytes_recv": 117448650
+    },
+    {
+        "timestamp": "2025-09-12 01:05:01",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.8,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 1689000,
+        "net_bytes_recv": 117448981
+    },
+    {
+        "timestamp": "2025-09-12 01:05:55",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.7,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 1689000,
+        "net_bytes_recv": 117448981
     }
 ]
