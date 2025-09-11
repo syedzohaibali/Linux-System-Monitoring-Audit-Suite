@@ -14,7 +14,7 @@ env/
 *.log
 *.csv
 *.json
-reports/
+# reports/
 logs/
 backups/
 
