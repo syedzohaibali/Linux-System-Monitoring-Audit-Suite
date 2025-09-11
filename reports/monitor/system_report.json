@@ -14,5 +14,13 @@
         "disk_percent": 0.9,
         "net_bytes_sent": 1660036,
         "net_bytes_recv": 117383189
+    },
+    {
+        "timestamp": "2025-09-12 00:45:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.7,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 1669973,
+        "net_bytes_recv": 117406380
     }
 ]
