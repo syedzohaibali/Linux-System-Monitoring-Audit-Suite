@@ -1,0 +1,69 @@
+{
+    "timestamp": "2025-09-16T06:59:11.854911",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}{
+    "timestamp": "2025-09-16T14:06:48.640775",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T14:07:58.891206",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T14:09:03.103759",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T14:10:25.822293",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T15:09:05.847539",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 0,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T15:26:33.018079",
+    "error_count": 0,
+    "warning_count": 0,
+    "info_count": 1,
+    "failed_logins": 0,
+    "top_messages": []
+}
+{
+    "timestamp": "2025-09-16T15:30:07.043103",
+    "error_count": 1,
+    "warning_count": 1,
+    "info_count": 2,
+    "failed_logins": 5,
+    "top_messages": [
+        "2025-09-16T15:29:08.272085+05:00 ZO sayed: This is a TEST ERROR message",
+        "2025-09-16T15:29:17.871941+05:00 ZO sayed: This is a TEST WARNING message",
+        "2025-09-16T15:27:48.881801+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed",
+        "2025-09-16T15:27:54.581374+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed",
+        "2025-09-16T15:28:07.562905+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed"
+    ]
+}
