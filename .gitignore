@@ -10,12 +10,20 @@ venv/
 ENV/
 env/
 
-# Logs and reports
+# Logs (keep them out of Git, they grow too fast)
 *.log
-*.csv
-# *.json
-# reports/
 logs/
+
+# CSV (we don’t use them anymore)
+*.csv
+
+# JSON reports (we DO want to keep these)
+# so don’t ignore *.json
+
+# Reports (keep reports/ in Git so JSON files are versioned)
+# reports/
+
+# Backups (we’ll decide later if we want to keep them, so ignore for now)
 backups/
 
 # Config and secrets
