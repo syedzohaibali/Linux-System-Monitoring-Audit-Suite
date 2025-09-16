@@ -35,7 +35,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 
 ## Project Structure
-'''
+```
 Linux-System-Monitoring-Audit-Suite/
 │── tasks/
 │   ├── monitor/
@@ -62,7 +62,8 @@ Linux-System-Monitoring-Audit-Suite/
 │── requirements.txt
 │── README.md
 │── .gitignore
-'''
+```
+
 Usage — Task 1: System Health Monitor
 
 Run manually from the repo root:
