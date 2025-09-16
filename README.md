@@ -85,8 +85,7 @@ Outputs
 
 */5 * * * * cd /home/Linux_System_Monitoring_And_Audit_Suite && /home/Linux_System_Monitoring_And_Audit_Suite/.venv/bin/python /home/Linux_System_Monitoring_And_Audit_Suite/tasks/monitor/monitor.py >> /home/Linux_System_Monitoring_And_Audit_Suite/logs/monitor_cron.log 2>&1
 
-
-*Note: The script commits & pushes once per day (between 00:00–00:04)*
+** _Note: The script commits & pushes once per day (between 00:00–00:04)_ **
 
 
 **Progress Tracking**
