@@ -1,10 +1,10 @@
-#Linux System Monitoring & Audit Suite
+# Linux System Monitoring & Audit Suite
 
 A lightweight Python-based toolkit to monitor Linux system health, analyze logs, automate backups, and track user/process activity.
 
 This project is a hands-on excercise to reinforce the git and python expertise required to be a good DevOps practioner.
 
-#Features (Planned & Implemented)
+## Features (Planned & Implemented)
 
 **System Health Monitor (monitor.py)** → Records CPU, memory, disk, and network usage.
 
@@ -16,7 +16,7 @@ This project is a hands-on excercise to reinforce the git and python expertise r
 
  **Git Pre-Commit Hook** → Ensures code quality and security checks.
 
-##Installation
+## Installation
 
  1) Clone the repository:
 
@@ -34,7 +34,7 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-##Project Structure
+## Project Structure
 Linux-System-Monitoring-Audit-Suite/
 │── tasks/
 │   ├── monitor/
@@ -66,10 +66,10 @@ Usage — Task 1: System Health Monitor
 
 Run manually from the repo root:
 
-# activate venv (recommended)
+## Activate venv (recommended)
 source .venv/bin/activate
 
-# run the monitor
+## Run the monitor
 python3 tasks/monitor/monitor.py
 
 Outputs
@@ -87,7 +87,7 @@ Automation with CRON:
 Note: The script commits & pushes once per day (between 00:00–00:04).
 
 
-Progress Tracking
+**Progress Tracking**
 
  Task 1: System Health Monitor
 
