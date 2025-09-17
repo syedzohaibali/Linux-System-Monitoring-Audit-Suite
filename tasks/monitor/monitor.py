@@ -62,7 +62,7 @@ def save_to_json(data):
 def git_commit_and_push():
     now = datetime.now()
     # Only commit near midnight (00:00 ± 5 minutes)
-    if now.hour == 0 and now.minute < 5:
+    if now.hour == 0 and 45 <= now.minute < 60:
         try:
             # 1. Sync with remote (autostash avoids unstaged changes)
             subprocess.run(
