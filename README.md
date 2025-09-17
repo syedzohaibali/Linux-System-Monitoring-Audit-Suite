@@ -4,11 +4,11 @@ A lightweight Python-based toolkit to monitor Linux system health, analyze logs,
 
 This project is a hands-on excercise to reinforce the git and python expertise required to be a good DevOps practioner.
 
-## Features (Planned & Implemented)
+## Features 
 
 **System Health Monitor (monitor.py)** → Records CPU, memory, disk, and network usage.
 
-**Log Analyzer (log_analyzer.py)** → Parses and summarizes system logs.
+**Log Analyzer (log_analyzer.py)** → Parses and summarizes system logs for errors, warnings, info, and failed login attempts.
 
 **Backup Tool (backup.py)** → Automates backups with retention policy.
 
@@ -19,9 +19,6 @@ This project is a hands-on excercise to reinforce the git and python expertise r
 ## Installation
 
  1) Clone the repository:
-
-git clone https://github.com/syedzohaibali/Linux-System-Monitoring-Audit-Suite.git
-cd Linux-System-Monitoring-Audit-Suite
 
 
  2) Create and activate a virtual environment (Recommended):

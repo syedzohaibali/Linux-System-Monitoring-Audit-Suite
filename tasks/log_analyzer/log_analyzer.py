@@ -24,7 +24,7 @@ FAILED_LOGIN_PATTERNS = [
 
 def analyze_logs():
     summary = {
-        "timestamp": datetime.now().isoformat(),
+        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "error_count": 0,
         "warning_count": 0,
         "info_count": 0,
