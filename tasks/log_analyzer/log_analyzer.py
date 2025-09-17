@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import subprocess
 from datetime import datetime
 
 # Paths
@@ -16,10 +17,10 @@ ANALYZER_LOG = os.path.join(LOGS_DIR, "log_analyzer.log")
 
 # --- Patterns ---
 FAILED_LOGIN_PATTERNS = [
-    r"failed password",          # common SSH/sshd
-    r"authentication failure",   # PAM / su
-    r"FAILED su",                # su attempts
-    r"invalid user",             # invalid ssh user
+    r"failed password",        # SSH/sshd
+    r"authentication failure", # PAM / su
+    r"FAILED su",              # su attempts
+    r"invalid user",           # invalid ssh user
 ]
 
 def analyze_logs():
@@ -65,7 +66,6 @@ def analyze_logs():
 
     # Top 5 frequent messages
     summary["top_messages"] = messages[:5]
-
     return summary
 
 def save_report(summary):
@@ -78,8 +78,38 @@ def save_report(summary):
         with open(ANALYZER_LOG, "a") as logf:
             logf.write(f"[{datetime.now()}] ERROR saving report: {e}\n")
 
+def git_commit_and_push():
+    now = datetime.now()
+    # Only commit near midnight (00:00 ± 5 minutes)
+    if now.hour == 0 and now.minute < 5:
+        try:
+            # Sync with remote
+            subprocess.run(
+                ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+                check=True
+            )
+            # Stage reports
+            subprocess.run(["git", "add", OUTPUT_FILE, ANALYZER_LOG], check=True)
+
+            # Commit
+            commit_message = f"Daily log analyzer report {now.strftime('%Y-%m-%d')}"
+            commit_result = subprocess.run(
+                ["git", "commit", "-m", commit_message],
+                check=False, capture_output=True, text=True
+            )
+
+            if "nothing to commit" in commit_result.stdout.lower():
+                return  # Skip push
+
+            # Push
+            subprocess.run(["git", "push", "origin", "main"], check=True)
+        except Exception as e:
+            with open(ANALYZER_LOG, "a") as logf:
+                logf.write(f"[{datetime.now()}] Git commit/push failed: {e}\n")
+
 if __name__ == "__main__":
     summary = analyze_logs()
-    print(json.dumps(summary, indent=4))  # Show in terminal
+    print(json.dumps(summary, indent=4))
     save_report(summary)
+    git_commit_and_push()
 
