@@ -14,18 +14,18 @@ This project is a hands-on excercise to reinforce the git and python expertise r
 
 **User & Process Tracker (user_process_tracker.py)** → Tracks login sessions and anomalies.
 
- **Git Pre-Commit Hook** → Ensures code quality and security checks.
+**Git Pre-Commit Hook** → Ensures code quality and security checks.
 
 ## Installation
 
  1) Clone the repository:
-
+git clone <repo-url>
+cd Linux-System-Monitoring-Audit-Suite
 
  2) Create and activate a virtual environment (Recommended):
 
 python3 -m venv .venv
 source .venv/bin/activate
-
 
  3) Install dependencies:
 
@@ -36,23 +36,23 @@ pip install -r requirements.txt
 Linux-System-Monitoring-Audit-Suite/
 │── tasks/
 │   ├── monitor/
-│   │   └── monitor.py
+│   │   └── monitor.py             # (Task 1)
 │   ├── log_analyzer/
-│   │   └── log_analyzer.py        # (to be added in Task 2)
+│   │   └── log_analyzer.py        # (Task 2)
 │   ├── backup/
-│   │   └── backup.py              # (placeholder)
+│   │   └── backup.py              # (Task 3)
 │   └── user_process_tracker/
-│       └── user_process_tracker.py # (placeholder)
+│       └── user_process_tracker.py # (Task 4)
 │
 │── reports/
 │   ├── monitor/
-│   │   └── system_report.json
+│   │   └── system_report.json     
 │   └── logs/
-│       └── log_summary.json       # (Task 2 output)
+│       └── log_summary.json      
 │
 │── logs/
 │   ├── monitor.log
-│   └── log_analyzer.log           # (Task 2)
+│   └── log_analyzer.log          
 │
 │── config/
 │── hooks/
@@ -61,38 +61,29 @@ Linux-System-Monitoring-Audit-Suite/
 │── .gitignore
 ```
 
-Usage — Task 1: System Health Monitor
+**Usage**
+*Task 1:* **System Health Monitor**
 
-Run manually from the repo root:
-
-## Activate venv (recommended)
+Run manually:
 source .venv/bin/activate
-
-## Run the monitor
 python3 tasks/monitor/monitor.py
 
-Outputs
+*Outputs*
 
  Pretty JSON (grows over time): reports/monitor/system_report.json
 
  Logs: logs/monitor.log
 
-## Automation with CRON:
- This runs the monitor every 5 minutes and logs output:
 
-*/5 * * * * cd /home/Linux_System_Monitoring_And_Audit_Suite && /home/Linux_System_Monitoring_And_Audit_Suite/.venv/bin/python /home/Linux_System_Monitoring_And_Audit_Suite/tasks/monitor/monitor.py >> /home/Linux_System_Monitoring_And_Audit_Suite/logs/monitor_cron.log 2>&1
+*Task 2:* **Log Anlyzer**
 
-** _Note: The script commits & pushes once per day (between 00:00–00:04)_ **
+Run Manually:
+source .venv/bin/activate
+python3 tasks/log_analyzer/log_analyzer.py
+
+*Outputs*
+JSON report: reports/log_analyzer/log_summary.json
+
+Log file: logs/log_analyzer.log
 
 
-**Progress Tracking**
-
- Task 1: System Health Monitor
-
- Task 2: Log Analyzer
-
- Task 3: Backup Tool
-
- Task 4: User & Process Tracker
-
- Task 5: Git Pre-Commit Hook
