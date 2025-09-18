@@ -61,29 +61,31 @@ Linux-System-Monitoring-Audit-Suite/
 │── .gitignore
 ```
 
-**Usage**
-*Task 1:* **System Health Monitor**
+##Usage
+**Task 1: System Health Monitor**
 
 Run manually:
 source .venv/bin/activate
+
 python3 tasks/monitor/monitor.py
 
-*Outputs*
+**_Outputs_**
 
- Pretty JSON (grows over time): reports/monitor/system_report.json
+JSON Report: reports/monitor/system_report.json
 
- Logs: logs/monitor.log
+Logs: logs/monitor.log
 
 
-*Task 2:* **Log Anlyzer**
+**Task 2: Log Anlyzer**
 
 Run Manually:
 source .venv/bin/activate
+
 python3 tasks/log_analyzer/log_analyzer.py
 
-*Outputs*
+**_Outputs_**
 JSON report: reports/log_analyzer/log_summary.json
 
-Log file: logs/log_analyzer.log
+Logs: logs/log_analyzer.log
 
 
