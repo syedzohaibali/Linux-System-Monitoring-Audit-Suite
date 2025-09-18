@@ -1,10 +1,3 @@
-# monitor.py
-# Task 1: System Health Monitor
-# - Collects CPU, memory, disk, and network stats
-# - Saves results into pretty JSON
-# - Logs each run into logs/monitor.log
-# - Auto-commits & pushes updates to GitHub only once per day
-
 import psutil
 import json
 import os
@@ -61,41 +54,39 @@ def save_to_json(data):
 # --- Git automation (once per day) ---
 def git_commit_and_push():
     now = datetime.now()
-    # Only commit near midnight (00:00 ± 5 minutes)
-    if now.hour == 0 and 45 <= now.minute < 60:
+    # Only commit between 01:30 and 01:59 AM
+    if now.hour == 1 and 30 <= now.minute < 60:
         try:
-            # 1. Sync with remote (autostash avoids unstaged changes)
+            repo_path = "/home/Linux_System_Monitoring_And_Audit_Suite"
+
             subprocess.run(
                 ["git", "pull", "--rebase", "--autostash", "origin", "main"],
-                check=True
+                check=True, cwd=repo_path
             )
-
-            # 2. Stage the JSON file
-            subprocess.run(["git", "add", JSON_FILE], check=True)
-
-            # 3. Commit with date stamp
+            subprocess.run(
+                ["git", "add", JSON_FILE],
+                check=True, cwd=repo_path
+            )
             commit_message = f"Daily system report {now.strftime('%Y-%m-%d')}"
             commit_result = subprocess.run(
                 ["git", "commit", "-m", commit_message],
-                check=False, capture_output=True, text=True
+                cwd=repo_path, capture_output=True, text=True
             )
-
-            # Skip push if nothing new
             if "nothing to commit" in commit_result.stdout.lower():
                 logging.info("ℹ️ No changes detected, skipping push.")
                 return
 
-            # 4. Push
-            subprocess.run(["git", "push", "origin", "main"], check=True)
+            subprocess.run(
+                ["git", "push", "origin", "main"],
+                check=True, cwd=repo_path
+            )
             logging.info("✅ Daily report committed and pushed to GitHub.")
-
         except subprocess.CalledProcessError as e:
             logging.error(f"❌ Git command failed: {e}")
         except Exception as e:
             logging.error(f"❌ Unexpected error in git_commit_and_push: {e}")
     else:
         logging.info("ℹ️ Skipping commit — not scheduled time yet.")
-
 
 # --- Main function ---
 def main():
