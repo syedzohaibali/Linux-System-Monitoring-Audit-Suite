@@ -4,7 +4,7 @@ import json
 import subprocess
 from datetime import datetime
 
-# Paths
+# --- Paths ---
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 REPORTS_DIR = os.path.join(BASE_DIR, "reports", "log_analyzer")
 LOGS_DIR = os.path.join(BASE_DIR, "logs")
@@ -17,10 +17,10 @@ ANALYZER_LOG = os.path.join(LOGS_DIR, "log_analyzer.log")
 
 # --- Patterns ---
 FAILED_LOGIN_PATTERNS = [
-    r"failed password",        # SSH/sshd
-    r"authentication failure", # PAM / su
-    r"FAILED su",              # su attempts
-    r"invalid user",           # invalid ssh user
+    r"failed password",
+    r"authentication failure",
+    r"FAILED su",
+    r"invalid user",
 ]
 
 def analyze_logs():
@@ -33,18 +33,25 @@ def analyze_logs():
         "top_messages": []
     }
 
-    log_files = ["/var/log/syslog", "/var/log/auth.log"]
+    # Only parse user-accessible logs (no root required)
+    log_files = [
+        os.path.join(LOGS_DIR, "monitor.log"),
+        os.path.join(LOGS_DIR, "log_analyzer.log"),
+    ]
+
     messages = []
 
     for log_file in log_files:
         if not os.path.exists(log_file):
+            with open(ANALYZER_LOG, "a") as logf:
+                logf.write(f"[{datetime.now()}] Skipping missing log: {log_file}\n")
             continue
+
         try:
             with open(log_file, "r", errors="ignore") as f:
                 for line in f:
                     lower = line.lower()
 
-                    # Count ERROR/WARNING/INFO
                     if "error" in lower:
                         summary["error_count"] += 1
                         messages.append(line.strip())
@@ -54,7 +61,6 @@ def analyze_logs():
                     elif "info" in lower:
                         summary["info_count"] += 1
 
-                    # Failed login detection
                     for pattern in FAILED_LOGIN_PATTERNS:
                         if re.search(pattern, lower):
                             summary["failed_logins"] += 1
@@ -68,6 +74,7 @@ def analyze_logs():
     summary["top_messages"] = messages[:5]
     return summary
 
+
 def save_report(summary):
     try:
         with open(OUTPUT_FILE, "a") as f:  # append new entries
@@ -78,34 +85,48 @@ def save_report(summary):
         with open(ANALYZER_LOG, "a") as logf:
             logf.write(f"[{datetime.now()}] ERROR saving report: {e}\n")
 
+
 def git_commit_and_push():
     now = datetime.now()
-    # Only commit near midnight (00:00 ± 5 minutes)
-    if now.hour == 0 and 45 <= now.minute < 60:
+    # Only commit between 02:05 and 02:09 AM
+    if now.hour == 2 and 5 <= now.minute < 10:
         try:
+            repo_path = BASE_DIR
+
             # Sync with remote
             subprocess.run(
                 ["git", "pull", "--rebase", "--autostash", "origin", "main"],
-                check=True
+                check=True, cwd=repo_path
             )
-            # Stage reports
-            subprocess.run(["git", "add", OUTPUT_FILE, ANALYZER_LOG], check=True)
+
+            # Stage only log analyzer report
+            subprocess.run(["git", "add", OUTPUT_FILE], check=True, cwd=repo_path)
 
             # Commit
             commit_message = f"Daily log analyzer report {now.strftime('%Y-%m-%d')}"
             commit_result = subprocess.run(
                 ["git", "commit", "-m", commit_message],
-                check=False, capture_output=True, text=True
+                cwd=repo_path, capture_output=True, text=True
             )
 
             if "nothing to commit" in commit_result.stdout.lower():
-                return  # Skip push
+                with open(ANALYZER_LOG, "a") as logf:
+                    logf.write(f"[{datetime.now()}] No changes to commit.\n")
+                return
 
             # Push
-            subprocess.run(["git", "push", "origin", "main"], check=True)
+            subprocess.run(["git", "push", "origin", "main"], check=True, cwd=repo_path)
+
+            with open(ANALYZER_LOG, "a") as logf:
+                logf.write(f"[{datetime.now()}] ✅ Daily report committed and pushed.\n")
+
         except Exception as e:
             with open(ANALYZER_LOG, "a") as logf:
                 logf.write(f"[{datetime.now()}] Git commit/push failed: {e}\n")
+    else:
+        with open(ANALYZER_LOG, "a") as logf:
+            logf.write(f"[{datetime.now()}] Skipping commit — not scheduled time.\n")
+
 
 if __name__ == "__main__":
     summary = analyze_logs()
