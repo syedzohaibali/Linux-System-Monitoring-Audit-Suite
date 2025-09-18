@@ -81,3 +81,17 @@
         "2025-09-16T15:27:54.581374+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed"
     ]
 }
+{
+    "timestamp": "2025-09-18 00:59:31",
+    "error_count": 2,
+    "warning_count": 1,
+    "info_count": 2,
+    "failed_logins": 5,
+    "top_messages": [
+        "2025-09-16T15:29:08.272085+05:00 ZO sayed: This is a TEST ERROR message",
+        "2025-09-16T15:29:17.871941+05:00 ZO sayed: This is a TEST WARNING message",
+        "2025-09-16T16:01:27.679021+05:00 ZO rsyslogd: file '/var/log/kern.log': open error: Permission denied [v8.2312.0 try https://www.rsyslog.com/e/2433 ]",
+        "2025-09-16T15:27:48.881801+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed",
+        "2025-09-16T15:27:54.581374+05:00 ZO su: pam_unix(su:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=sayed rhost=  user=sayed"
+    ]
+}
