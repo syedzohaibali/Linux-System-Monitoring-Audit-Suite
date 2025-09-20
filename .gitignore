@@ -21,9 +21,10 @@ logs/
 # so don’t ignore *.json
 
 # Reports (keep reports/ in Git so JSON files are versioned)
-# reports/
+# BUT ignore tar.gz backups (Task 3 auto-generated)
+reports/backup/*.tar.gz
 
-# Backups (we’ll decide later if we want to keep them, so ignore for now)
+# Backups (legacy top-level "backups/" dir, ignore it)
 backups/
 
 # Config and secrets
