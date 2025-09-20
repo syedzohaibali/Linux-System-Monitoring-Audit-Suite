@@ -10,7 +10,7 @@ This project is a hands-on excercise to reinforce the git and python expertise r
 
 **Log Analyzer (log_analyzer.py)** → Parses and summarizes system logs for errors, warnings, info, and failed login attempts.
 
-**Backup Tool (backup.py)** → Automates backups with retention policy.
+**Backup Tool (backup.py)** → Created and automates backups while keeping the recent 3 tar.gz backups ONLY (and deleting the older backups)
 
 **User & Process Tracker (user_process_tracker.py)** → Tracks login sessions and anomalies.
 
@@ -36,24 +36,25 @@ pip install -r requirements.txt
 Linux-System-Monitoring-Audit-Suite/
 │── tasks/
 │   ├── monitor/
-│   │   └── monitor.py             # (Task 1)
+│   │   └── monitor.py              # (Task 1: System Health Monitor)
 │   ├── log_analyzer/
-│   │   └── log_analyzer.py        # (Task 2)
+│   │   └── log_analyzer.py         # (Task 2: Log Analyzer)
 │   ├── backup/
-│   │   └── backup.py              # (Task 3)
+│   │   └── backup.py               # (Task 3: Automated Backup System)
 │   └── user_process_tracker/
-│       └── user_process_tracker.py # (Task 4)
+│       └── user_process_tracker.py # (Task 4: User & Process Tracker)
 │
 │── reports/
 │   ├── monitor/
-│   │   └── system_report.json     
-│   └── logs/
-│       └── log_summary.json      
+│   │   └── system_report.json      # Task 1 output
+│   ├── log_analyzer/
+│   │   └── log_summary.json        # Task 2 output
+│   └── backup/
+│       ├── backup_2025-09-20_16-40-59.tar.gz
+│       ├── backup_2025-09-20_16-41-02.tar.gz
+│       └── backup_2025-09-20_16-41-08.tar.gz   # Task 3 backups (rotated, last 3 kept)
 │
 │── logs/
-│   ├── monitor.log
-│   └── log_analyzer.log          
-│
 │── config/
 │── hooks/
 │── requirements.txt
@@ -88,4 +89,6 @@ JSON report: reports/log_analyzer/log_summary.json
 
 Logs: logs/log_analyzer.log
 
-
+**Task3: Automated BAckups**
+Compressed backups → reports/backup/backup_<timestamp>.tar.gz
+Logs: logs/backup.log
