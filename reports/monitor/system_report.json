@@ -4318,5 +4318,69 @@
         "disk_percent": 0.9,
         "net_bytes_sent": 131321,
         "net_bytes_recv": 887173
+    },
+    {
+        "timestamp": "2025-09-26 02:00:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 137825,
+        "net_bytes_recv": 901418
+    },
+    {
+        "timestamp": "2025-09-26 03:00:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144367,
+        "net_bytes_recv": 918108
+    },
+    {
+        "timestamp": "2025-09-26 05:00:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144437,
+        "net_bytes_recv": 926243
+    },
+    {
+        "timestamp": "2025-09-26 10:00:02",
+        "cpu_percent": 0.3,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144507,
+        "net_bytes_recv": 937840
+    },
+    {
+        "timestamp": "2025-09-26 21:00:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144577,
+        "net_bytes_recv": 955762
+    },
+    {
+        "timestamp": "2025-09-26 22:00:01",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144647,
+        "net_bytes_recv": 963722
+    },
+    {
+        "timestamp": "2025-09-26 23:00:02",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144717,
+        "net_bytes_recv": 969563
+    },
+    {
+        "timestamp": "2025-09-27 01:58:37",
+        "cpu_percent": 0.0,
+        "memory_percent": 7.3,
+        "disk_percent": 0.9,
+        "net_bytes_sent": 144787,
+        "net_bytes_recv": 978014
     }
 ]
