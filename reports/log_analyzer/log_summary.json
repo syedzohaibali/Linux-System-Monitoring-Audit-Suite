@@ -2097,3 +2097,325 @@
         "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
     ]
 }
+{
+    "timestamp": "2025-10-04 03:00:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1231,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 04:00:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1233,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 05:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1235,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 06:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1237,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 07:00:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1239,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 15:00:03",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1241,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 16:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1243,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 17:00:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1245,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 18:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1247,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-04 23:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1249,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 00:00:03",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1251,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 01:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1253,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 07:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1255,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 18:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1257,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 19:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1259,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 20:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1261,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 21:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1263,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 22:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1265,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-05 23:00:03",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1267,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-06 00:00:03",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1269,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-06 01:00:02",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1271,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-06 02:00:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1275,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
+{
+    "timestamp": "2025-10-06 02:07:01",
+    "error_count": 13,
+    "warning_count": 3,
+    "info_count": 1277,
+    "failed_logins": 1,
+    "top_messages": [
+        "2025-09-12 00:22:48,771 [ERROR] \u274c Git commit/push failed: Command '['git', 'commit', '-m', 'Update system report 2025-09-12 00:22:48']' returned non-zero exit status 1.",
+        "2025-09-12 00:45:04,549 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:50:03,793 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 00:55:03,997 [ERROR] \u274c Git commit/push failed: Command '['git', 'push']' returned non-zero exit status 1.",
+        "2025-09-12 01:01:37,261 [ERROR] \u274c Git command failed: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128."
+    ]
+}
